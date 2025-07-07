@@ -31,6 +31,6 @@ Predict daily bike demand at each Bluebikes station in Boston using weather cond
 
 ### 📈 Results
 - **Test RMSE**: **9.29 trips/day**
-- **R² Score**: **0.0.9223**
-- **Usage history (lag features)** was the strongest predictor of future demand, with the 7-day rolling average (`rolling_7`) contributing the most to the model’s performance.
+- **R² Score**: **0.9223**
+- **Usage history** was the strongest predictor of future demand, with the 7-day rolling average (`rolling_7`) contributing the most to the model’s performance.
 ---
