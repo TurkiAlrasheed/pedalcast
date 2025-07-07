@@ -34,3 +34,18 @@ Predict daily bike demand at each Bluebikes station in Boston using weather cond
 - **R² Score**: **0.9223**
 - **Usage history** was the strongest predictor of future demand, with the 7-day rolling average (`rolling_7`) contributing the most to the model’s performance.
 ---
+
+### 🔮 Forecasting
+
+A recursive forecasting function was implemented to predict bike demand for any future date range. This function:
+- Builds a grid of all stations × dates to predict
+- Uses the trained model to generate forecasts day by day, recursively using prior predictions as inputs to get lag features.
+
+Example usage:
+```python
+forecast = forecast_bike_demand(
+    start_date='2025-07-01',
+    end_date='2025-07-07',
+    full_data=daily_counts,
+    model_pipeline=loaded_model
+)
