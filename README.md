@@ -7,7 +7,7 @@ Predict daily bike demand at each Bluebikes station in Boston using weather cond
 
 ### 📅 Data Sources
 - **[Bluebikes Trip Data](https://s3.amazonaws.com/hubway-data/index.html)**  
-  Covers July 2023 through June 2025.
+  I gathered data from July 2023 through June 2025.
   
 - **[Visual Crossing Historical Weather](https://www.visualcrossing.com/weather-data)**  
   Daily Boston weather from July 2023 to June 2025, including temperature, precipitation, humidity, windspeed, and visibility.
