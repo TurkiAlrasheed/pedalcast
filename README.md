@@ -30,15 +30,15 @@ Predict daily bike demand at each Bluebikes station in Boston using weather cond
 
 
 ### 📈 Results
-- **Test RMSE**: **9.29 trips/day**
-- **R² Score**: **0.9223**
+- **Test RMSE**: **9.24 trips/day**
+- **R² Score**: **0.9233**
 - **Usage history** was the strongest predictor of future demand, with the 7-day rolling average (`rolling_7`) contributing the most to the model’s performance.
 ---
 
 ### 🔮 Forecasting
 
 A recursive forecasting function was implemented to predict bike demand for any future date range. This function:
-- Builds a grid of all stations × dates to predict
+- Builds a grid of all stations × dates to predict (if stations not specified), taking into account stations that have seasonal inactivitiy (e.g. Nov 14 to Mar 14).
 - Uses the trained model to generate forecasts day by day, recursively using prior predictions as inputs to get lag features.
 
 Example usage:
