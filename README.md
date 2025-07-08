@@ -5,7 +5,7 @@ Predict daily bike demand at each Bluebikes station in Boston using weather cond
 
 ---
 
-### 📅 Data Sources
+### Data Sources
 - **[Bluebikes Trip Data](https://s3.amazonaws.com/hubway-data/index.html)**  
   I gathered data from July 2023 through June 2025.
   
@@ -14,7 +14,7 @@ Predict daily bike demand at each Bluebikes station in Boston using weather cond
 
 ---
 
-### ⚙️ Methods
+### Methods
 - **Feature Engineering**
   - Lag features: previous day's trips (`lag_1`), weekly cycle (`lag_7`)
   - Rolling 7-day average: `rolling_7`
@@ -29,13 +29,13 @@ Predict daily bike demand at each Bluebikes station in Boston using weather cond
 ---
 
 
-### 📈 Results
+### Results
 - **Test RMSE**: **9.24 trips/day**
 - **R² Score**: **0.9233**
 - **Usage history** was the strongest predictor of future demand, with the 7-day rolling average (`rolling_7`) contributing the most to the model’s performance.
 ---
 
-### 🔮 Forecasting
+### Forecasting
 
 A recursive forecasting function was implemented to predict bike demand for any future date range. This function:
 - Builds a grid of all stations × dates to predict (if stations not specified), taking into account stations that have seasonal inactivitiy (e.g. Nov 14 to Mar 14).
