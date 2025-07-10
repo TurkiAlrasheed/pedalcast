@@ -1,7 +1,7 @@
 # 🚲 PedalCast: Forecasting Daily Bluebikes Usage
 
 **Goal**  
-Predict daily bike demand at each Bluebikes station in Boston using weather conditions, calendar context, and recent usage patterns.
+Predict daily bike demand at each Bluebikes station in Greater Boston using weather conditions, calendar context, and recent usage patterns.
 
 ---
 
