@@ -49,3 +49,12 @@ forecast = forecast_bike_demand(
     full_data=daily_counts,
     model_pipeline=loaded_model
 )
+```
+
+To explore the full workflow, follow the notebooks in this order:
+
+1. **`cleaning-eda.ipynb`**  
+2. **`modeling.ipynb`**  
+3. **`forecasting.ipynb`**  
+  
+
