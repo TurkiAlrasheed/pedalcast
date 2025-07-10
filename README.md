@@ -50,6 +50,7 @@ forecast = forecast_bike_demand(
     model_pipeline=loaded_model
 )
 ```
+---
 
 To explore the full workflow, follow the notebooks in this order:
 
